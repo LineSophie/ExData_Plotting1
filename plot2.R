@@ -15,7 +15,6 @@ EPC1[1441:2880,"Time"] <- format(EPC1[1441:2880,"Time"],"2007-02-02 %H:%M:%S")
 
 ## Construct Plot
 plot(EPC1$Time,as.numeric(as.character(EPC1$Global_active_power)), type="l", xlab="",ylab="Global Active Power (kilowatts)")
-title(main="Global Active Power Vs Time")
 
 ##Save as png 
 dev.copy(png, file = "plot2.png", width = 480, height = 480)
